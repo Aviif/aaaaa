@@ -1,0 +1,56 @@
+{
+	id: "1CF65D6371AA2203"
+	group: ""
+	order_index: 4
+	filename: "mine_cells"
+	title: "Mine Cells"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Visit the Prison Dimension"
+			x: 0.5d
+			y: 0.5d
+			subtitle: "The portal to the Prison dimension spawns randomly throughout the Overworld. If you have, at any point, been in possession of a diamond, the portal will already be activated."
+			id: "79FA9140695A02C0"
+			tasks: [{
+				id: "1B45ED7E7358543E"
+				type: "dimension"
+				icon: "minecraft:cobblestone"
+				dimension: "minecells:prison"
+			}]
+			rewards: [{
+				id: "034A43F3D26FDDD4"
+				type: "item"
+				item: "minecells:health_flask"
+			}]
+		}
+		{
+			title: "Defeat Conjunctivius"
+			x: 2.0d
+			y: 0.5d
+			subtitle: "Spawns in The Lair, which can be found underground in the Prison dimension. To deal damage to the Conjunctivius, you must first kill the tentacles. Can drop the Cursed Sword, which gives you the Cursed effect when held. Don't use this sword in Hardcore ;)"
+			dependencies: ["79FA9140695A02C0"]
+			id: "678B2562584E24EF"
+			tasks: [{
+				id: "34A86CD084A8B298"
+				type: "kill"
+				title: "Defeat Conjunctivius"
+				icon: {
+					id: "minecells:tentacle"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "minecells:conjunctivius"
+				value: 1L
+			}]
+			rewards: [{
+				id: "4148F0D9C8D784F4"
+				type: "item"
+				item: "alloy_forgery:prismarine_bricks_forge_controller"
+			}]
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+  "clearChatHistory": false,
+  "disableChatClearing": true,
+  "disableResourcePackWarning": true,
+  "skipLoadingTransition": true,
+  "skipToastFadeOut": false,
+  "skipTitleFadeIn": true,
+  "disableExperimentalWarning": true,
+  "enableItemDespawnBlink": true,
+  "despawnBlinkSpeed": 6000,
+  "enableQuickCrouch": false,
+  "quickCrouchSpeed": 10.0,
+  "despawnBlinkStartTime": 20,
+  "modpackBranding": {
+    "enabled": true,
+    "enableTitlescreenBranding": true,
+    "modpackName": "Medieval MC [FABRIC] 1.19.2",
+    "modpackVersion": {
+      "ID": "v13-fabric-medieval-mc",
+      "semName": "v13",
+      "releaseType": "Release"
+    },
+    "modpackID": "medieval-mc-fabric",
+    "modpackAuthors": [
+      "xSHXRKIEx",
+      "LunaPixelStudios"
+    ],
+    "URLS": {
+      "website": "https://www.curseforge.com/minecraft/modpacks/medieval-mc-fabric",
+      "support": "https://discord.gg/lunapixel",
+      "repository": "https://github.com/LunaPixelStudios/Medieval-MC"
+    }
+  },
+  "enableCutThroughGrass": true,
+  "enableHideHandKeybind": false
+}
